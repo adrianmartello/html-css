@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title> 
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(124, 122, 122);
+            padding: 3px;
+            box-shadow: 1px 1px 1px black; /*deslocamento horizontal/vertical/espalhamento e sombra*/
+        }
+        nav > a {  /*link dentro do nav*/
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav a:hover {
+            text-decoration: none;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 1px 1px 1px black;
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside { /*aside filho do article*/
+            background-color: rgb(194, 194, 194);
+            padding: 1px;
+            margin: 1px;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        #assuntos {
+            background-color: rgb(65, 62, 62);
+            padding-left: 5px;
+            text-align: center;
+            color: aliceblue;
+        }
+        div#bola {
+            height: 100px; /*altura*/
+            width: 100px;  /*largura*/
+            margin: 40px; /*margem*/
+            background-color: white;
+            border-radius: 50%; /*arredondou em 50%, deixando redondo*/
+        }
+    </style>
+</head>
+<body>
+    <header>   <!--cabeçalho-->
+        <h1>Meu site</h1>
+        <nav>  <!--define um conjunto de links de navegação-->
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>   <!--conteúdo principal-->
+        <section id="assuntos">  
+            <p>esportes politica e tecnologia</p>    
+        </section>
+        <section id="noticias">
+        </section> <!--define uma seção-->
+        <article> <!--especifica conteúdo independente e autocontido-->
+            <h2>Notícia sobre o Brasil</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium qui sed autem, nam nihil veniam quam sit? Incidunt voluptas perferendis ullam natus quaerat commodi soluta voluptatem eos! Sed, dignissimos velit.</p>
+            <aside>
+                <p>Artigo escrito por José da Silva</p>
+            </aside>
+        </article>
+    </main>
+    <footer>  <!--rodapé-->
+        <p>Desenvolvido pelo curso em video</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

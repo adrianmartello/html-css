@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 3em;
+    font-style: italic;
+}
+h2 {
+    font: italic bolder 2em 'courier New', courier, monospace;
+}

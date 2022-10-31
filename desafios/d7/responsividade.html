@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            border: 10px;
+            min-width: 280px; /*Porque 320 é a largura dos celulares mais antigos*/
+            max-width: 800px;
+            margin: auto; /*Centraliza*/
+        }
+        img {
+            width: 100%; /*Adapta a imagem*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eveniet distinctio soluta facilis saepe ab placeat nihil hic! Aliquam dolore et vero magnam recusandae quibusdam sapiente dicta sit hic aut!
+            <picture> 
+                <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+                <img src="imagens/irina-blok.jpg" alt="Irina Block">
+            </picture>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident delectus, eum temporibus tempore vero nobis quae, optio, tempora cupiditate architecto neque animi ut quam aliquam odio similique corporis! Sed, magni?
+        </h1>
+    </main>
+</body>
+</html>
