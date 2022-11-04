@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhmento vertical</title>
+    <style>
+        #container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+        }
+        #conteudo {
+            position: absolute; 
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            /*ao colocar a position: absolute, é possivel consigurar duas propriedades q são:*/
+            left: 50%; /* é a distãncia da horizontal --- */
+            top: 50%; /* é a distância vertical*/
+            transform: translate(-50%, -50%);
+        }
+        /* o margin só serve para o alinhamento horizontal*/
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
